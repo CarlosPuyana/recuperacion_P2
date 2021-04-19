@@ -15,6 +15,7 @@ WORKDIR /home/gitRepositorio/maven-project
 
 RUN mvn package
 
+COPY WebApp.war webapp/src/main/webapp/
 
 COPY index.jsp /webapp/src/main/webapp/
 
